@@ -1,12 +1,11 @@
-import React from 'react'
 import Layout from '../componets/layout/Layout'
 import DetallesProducto from '../componets/layout/DetallesProducto'
 import Error404 from '../componets/layout/404'
 import useProductos from '../hooks/useProductos'
 
-const  Home = () => {
+const Populares = () => {
 
-  const {productos} = useProductos("creado")
+  const {productos} = useProductos("votos")
 
   return (
 
@@ -30,4 +29,4 @@ const  Home = () => {
   )
 }
 
-export default Home
+export default Populares
